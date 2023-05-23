@@ -68,6 +68,13 @@ body {
     line-height: 24px;
     color: gray;
 }
+.link_span1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: blueviolet;
+}
 .project_link{
     margin-left: 10px;
 }
