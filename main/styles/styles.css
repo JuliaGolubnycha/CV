@@ -1,12 +1,16 @@
+:root{
+    --mint: rgb(120,231,182);
+}
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #f5f7fa;
+    background-color: var(--mint);
 }
 
 .main {
     display: flex;
     flex-direction: row-reverse;
-    width: 1200px;
+    max-width: fit-content;
     margin: 0 auto;
 }
 
@@ -66,7 +70,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: gray;
+    color: var(--mint);
 }
 .link_span1 {
     font-style: normal;
@@ -99,7 +103,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #FB6D3A;
+    color: var(--mint);
 }
 
 .period{
@@ -200,5 +204,18 @@ body {
 }
 
 .tech-skills-li {
-    color: #fb6d3a;
+    color: var(--mint);
+}
+
+@media (max-width: 961px) {
+    .main {
+        flex-direction: column; /* Stack columns vertically on larger screens */
+        align-items: center; /* Center columns vertically */
+      } 
+
+    .main_content,
+    .sidebar,
+    .about_description {
+        max-width: 100%;
+    }
 }
